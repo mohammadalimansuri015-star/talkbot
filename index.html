@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="WXBxxpsGmf9OFLttLlyH9O-3oGou3JMmbeZZuaNzNm4" />
     <title>Talk Bot AI</title>
+    
+    <!-- Canonical Tag & Sitemap Reference -->
+    <link rel="canonical" href="https://mohammadalimansuri015-star.github.io/talkbot/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://mohammadalimansuri015-star.github.io/talkbot/sitemap.xml" />
+
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; }
@@ -46,7 +50,6 @@
         const loadingMessage = appendMessage("Soch raha hoon...", "bot-message");
 
         try {
-            // Direct Public AI Endpoint (No CORS issue, No API Key required)
             const response = await fetch("https://text.pollinations.ai/" + encodeURIComponent(userText));
             const botReply = await response.text();
 
